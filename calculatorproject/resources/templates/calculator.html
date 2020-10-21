@@ -1,0 +1,48 @@
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+	
+	td, th {
+	  border: 1px solid #aaaabb;
+	  text-align: left;
+	  padding: 8px;
+	}
+	
+	tr:nth-child(even) {
+	  background-color: #ggggee;
+	}
+	</style>
+</head>
+<body style="background-color:#FFFFF0">
+	<marquee><h1 style="color:#FF0000"><b>My Calculator</b></h1></marquee>
+	
+		<h1 style="color:#C71585;" font-family:"Times New Roman;"align="center"><u><b>Calculator</B></u></h1><br>
+		<h2 style="color:#00FF00;" font-family:"Nashville;"align="center"><b>Enjoy Your Calculations</b></h2>
+		<hr>
+		<br><br>
+		<table>
+		<tr>
+			<th>Operation</th>
+			<th>Number1</th>
+			<th>Number2</th>
+			<th>Result</th>
+		</tr>
+		  <tr>
+	    <td th:text="${calculator.operator}"></td>
+	    <td th:text="${calculator.num1}"></td>
+	    <td th:text="${calculator.num2}"></td>
+	    <td th:text="${calculator.result}"></td>
+ 	</tr>
+		</table>
+		<br><h3><b>Click on RESET to start again</b></h3/><br>
+		<a href="http://localhost:8080/calculator-html?operator=_&num1=0&num2=0&result=0">RESET</a>
+		<h1 style="color:#FFFF00;" ALIGN="CENTER"><b><i>THANKYOU</i></b></h1>
+	</body>
+</html>
