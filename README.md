@@ -1,2 +1,2 @@
-# Basic-Calculator
-Basic Calculator Internship Project
+# Basic-Calculator 
+Basic Calculator Using Java Internship Project
